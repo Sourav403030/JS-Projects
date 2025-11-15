@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password{
+    display: flex;
+    gap: 20px;
+}
+
+input{
+    height: 40px;
+    width: 200px;
+    text-align: center;
+}
+
+
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: lightblue;
+    border-radius: 10px;
+}
