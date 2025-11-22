@@ -23,3 +23,4 @@ button.addEventListener("click", () => {
 
   }, randomProgress*100);
 });
+
