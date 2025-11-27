@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right bottom, rgb(255, 252, 252), rgb(40, 40, 40));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+section{
+    width: 500px;
+    margin: 0 auto;
+    height: 800px;
+    background-color: black;
+    border-radius: 20px;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    
+}
+
+.all-reels{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.reel{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+section::-webkit-scrollbar{
+    display: none;
+}
+
+
+.reel video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.825));
+    border-radius: 20px;
+    width: 100%;
+}
+
+.bottom-top{
+    padding: 20px;
+    display: flex ;
+    align-items: center;
+    gap: 15px;
+}
+
+.bottom-top img{
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bottom-top h3{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.bottom-top button{
+    padding: 2px 4px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-weight: 900;
+}
+
+.bottom-bottom{
+    padding: 0 20px;
+    color: white;
+}
+
+.bottom-bottom h4{
+    font-weight: 400;
+}
+
+.right{
+    position: absolute;
+    padding: 20px;
+    right: 0;
+    bottom: 20%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.right i{
+    font-size: 30px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.right h4{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.ri-heart-fill{
+    color: red;
+}
+
+
+
