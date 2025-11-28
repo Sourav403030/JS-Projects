@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --x: 200px;
+    --y: 200px;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.flash{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(150px at var(--x) var(--y), rgba(255, 255, 255, 0), black); /*radius x y, color*/
+    position: absolute;
+    z-index: 2;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+
+.card{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.top{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top img{
+    height: 1.5rem;
+}
+
+.top button{
+    padding: 4px 6px;
+    background-color: transparent;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 7px;
+}
+
+.top button span{
+    margin-left: 4px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.center h3{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.center h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.center .tags{
+    display: flex ;
+    align-items: center;
+    gap: 20px;
+}
+
+.tags h4{
+    padding: 5px 8px;
+    background-color: #b6b6b6;
+    border: 1px solid #888;
+    font-weight: 100;
+    font-size: 0.8rem;
+    border-radius: 8px;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.left-bottom h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.bottom button{
+    padding: 10px 12px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
